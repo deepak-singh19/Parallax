@@ -1,25 +1,40 @@
 #canvas1 {
-    position: relative;
-    width: 800px;
-    height: 700px;
-}
-
-body{
-    background: black;
-}
-#constainer{
-    border: 3px solid white;
     position: absolute;
-    width: 800px;
-    transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 700px;
+    border: 3px solid white;
+    z-index: 1;
 }
 
-#slider{
+body {
+    background: black;
+    margin: 0; /* Remove default body margin */
+    overflow: hidden; /* Hide overflowing content */
+}
+
+#container {
+    position: absolute;
+    width: 800px;
+    height: 700px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid white;
+    z-index: 2;
+}
+
+#slider {
     width: 100%;
-
+    position: absolute;
+    bottom: 0;
+    z-index: 3;
 }
-p{
-    color:white;
+
+p {
+    color: red;
+    z-index: 30;
+    position: absolute; 
 }
